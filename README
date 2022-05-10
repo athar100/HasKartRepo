@@ -1,0 +1,51 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| atharDB            |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql> use atharDB
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++-------------------+
+| Tables_in_athardb |
++-------------------+
+| ACCOUNTS          |
+| ORDER_DETAILS     |
+| orders            |
+| PRODUCTS          |
+| USER              |
++-------------------+
+5 rows in set (0.01 sec)
+
+mysql> select * from user;
++-----+--------+------+------+-----------+
+| ID  | ACTIVE | NAME | ROLE | USER_NAME |
++-----+--------+------+------+-----------+
+| 001 | 1      | 50   |  111 | ATHAR     |
++-----+--------+------+------+-----------+
+1 row in set (0.00 sec)
+
+mysql> select * from orders;
+Empty set (0.00 sec)
+
+mysql> select * from products;
++------+--------------+----------+-------+---------------------+
+| CODE | IMAGE        | NAME     | PRICE | CREATE_DATE         |
++------+--------------+----------+-------+---------------------+
+| S001 | NULL         | Samsung  | 10000 | 2022-05-09 11:51:59 |
+| S002 | NULL         | Apple    | 50000 | 2022-05-09 11:52:48 |
+| S003 | NULL         | Nokia    | 12000 | 2022-05-09 11:53:24 |
+| S004 | NULL         | Micromax | 11000 | 2022-05-09 11:53:58 |
+| S005 | NULL         | Vivo     | 11500 | 2022-05-09 11:54:39 |
++------+--------------+----------+-------+---------------------+
+5 rows in set (0.00 sec)
